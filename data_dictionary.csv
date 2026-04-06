@@ -1,0 +1,22 @@
+Column Name,Data Type,Non-Null Count,Null Count,Unique Values,Sample Value,Meaning,Business Relevance
+Row ID,int64,9994,0,9994,1,Unique row number for each record,"Index column, not used in analysis"
+Order ID,str,9994,0,5009,CA-2013-152156,Unique identifier for each order,"Track and group orders, detect duplicates"
+Order Date,str,9994,0,1238,09-11-2013,Date when the order was placed,"Trend analysis, seasonality, time series"
+Ship Date,str,9994,0,1334,12-11-2013,Date when the order was shipped,Calculate shipping time and delivery performance
+Ship Mode,str,9994,0,4,Second Class,Shipping method chosen by customer,Analyze shipping preferences and cost impact
+Customer ID,str,9994,0,793,CG-12520,Unique identifier for each customer,"Link orders to customers, calculate lifetime value"
+Customer Name,str,9994,0,793,Claire Gute,Full name of the customer,Customer identification and personalization
+Segment,str,9994,0,3,Consumer,Customer segment (Consumer/Corporate/Home Office),Segment-wise performance and targeting
+Country,str,9994,0,1,United States,Country where order was placed,Geographic analysis (only 1 country here)
+City,str,9994,0,531,Henderson,City where order was delivered,City-level sales performance analysis
+State,str,9994,0,49,Kentucky,State where order was delivered,State-level sales and profit analysis
+Postal Code,int64,9994,0,631,42420,Postal/ZIP code of delivery location,Location-based analysis and mapping
+Region,str,9994,0,4,South,Geographic sales region,Regional sales comparison and strategy
+Product ID,str,9994,0,1862,FUR-BO-10001798,Unique identifier for each product,Product tracking and inventory management
+Category,str,9994,0,3,Furniture,Main product category,Category-wise sales and profit analysis
+Sub-Category,str,9994,0,17,Bookcases,Sub-category under main category,Detailed product performance analysis
+Product Name,str,9994,0,1841,Bush Somerset Collection Bookcase,Full name of the product,Identify top and bottom performing products
+Sales,float64,9994,0,5825,261.96,Revenue generated from the order,Core revenue KPI for business performance
+Quantity,int64,9994,0,14,2,Number of units ordered,Demand analysis and inventory planning
+Discount,float64,9994,0,12,0.0,Discount applied on the order,Impact of discounts on sales and profit
+Profit,float64,9994,0,7287,41.9136,Profit earned from the order,"Core profitability KPI, identify loss-making orders"
